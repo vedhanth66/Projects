@@ -485,3 +485,87 @@ header{
     margin-left: 150px;
     line-height: 30px;
 }
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-logo {
+        width: 80px;
+    }
+    .nav-search {
+        width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    .nav-search {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .search {
+        width: 80%;
+    }
+    .search-icon {
+        width: 10%;
+    }
+    .main_image {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .nav-search {
+        width: 100%;
+    }
+    .logo {
+        height: 40px;
+        width: 100px;
+    }
+    .main_image {
+        height: 400px;
+    }
+    .game, .home, .kitchen, .toys, .new_arrivals, .hardwares, .dines, .makes {
+        width: 90%;
+        margin-top: 50px;
+    }
+    .sub_image, .sub_image2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-search {
+        width: 100%;
+        margin-top: 5px;
+    }
+    .logo {
+        height: 35px;
+        width: 90px;
+    }
+    .main_image {
+        height: 300px;
+    }
+    .game, .home, .kitchen, .toys, .new_arrivals, .hardwares, .dines, .makes {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .pc, .clean, .storage, .decor, .bed, .Cooker, .coffee, .pots, .kettle, .toy, .new_arrival, .hardware, .dine, .make {
+        height: 100px;
+        width: 100px;
+    }
+}
