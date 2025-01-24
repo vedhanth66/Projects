@@ -1,2 +1,1 @@
-Projects
-View some interesting projects
+**Projects**
