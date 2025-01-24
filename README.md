@@ -1,2 +1,2 @@
-# WebProject
-An amazon clone using HTML and CSS
+Projects
+View some interesting projects
