@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.nav {
+    background-color: rgb(0, 0, 57);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Container for Rock, Paper, Scissors buttons */
+.container_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Rock, Paper, Scissors buttons */
+.rock, .paper, .scissor {
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rock {
+    background-image: url('rock.png');
+}
+
+.paper {
+    background-image: url('paper.png');
+}
+
+.scissor {
+    background-image: url('scissors.png');
+}
+
+/* Result Section */
+.result_count {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.you, .comp {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.NUM1, .NUM2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Message Section */
+.area {
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.msg {
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(0, 0, 57);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* New Game Button */
+.new {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.new_game {
+    background-color: rgb(0, 0, 57);
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid rgb(109, 104, 255);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new_game:hover {
+    background-color: rgb(8, 15, 111);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container_images {
+        gap: 1rem;
+    }
+
+    .rock, .paper, .scissor {
+        width: 120px;
+        height: 120px;
+    }
+
+    .you, .comp {
+        font-size: 1.5rem;
+    }
+
+    .NUM1, .NUM2 {
+        font-size: 2.5rem;
+    }
+
+    .msg {
+        font-size: 1.2rem;
+    }
+
+    .new_game {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        font-size: 1.5rem;
+    }
+
+    .rock, .paper, .scissor {
+        width: 100px;
+        height: 100px;
+    }
+
+    .you, .comp {
+        font-size: 1.2rem;
+    }
+
+    .NUM1, .NUM2 {
+        font-size: 2rem;
+    }
+
+    .msg {
+        font-size: 1rem;
+    }
+
+    .new_game {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
+@media (max-width: 380px) {
+    .nav {
+        font-size: 1rem;
+    }
+
+    .rock, .paper, .scissor {
+        width: 100px;
+        height: 100px;
+    }
+
+    .you, .comp {
+        font-size: 1.2rem;
+    }
+
+    .NUM1, .NUM2 {
+        font-size: 2rem;
+    }
+
+    .msg {
+        font-size: 1rem;
+    }
+
+    .new_game {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+}

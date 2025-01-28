@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FDF0D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1 {
+    color: #C1121F;
+    font-weight: bold;
+    margin-top: 2vh;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    padding: 1rem;
+}
+.game {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-gap: 1vmin; /* Adds spacing between boxes */
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+}
+.box {
+    height: 20vw;
+    width: 20vw;
+    max-height: 120px;
+    max-width: 120px;
+    border-radius: 1rem;
+    border: 2px solid #780000;
+    box-shadow: 0 0 1rem rgba(58, 57, 57, 0.3);
+    font-size: clamp(3rem, 10vw, 5rem); /* Min: 3rem, Preferred: 10vw, Max: 5rem */
+    color: #003049;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+.reset_cont{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reset {    
+    width: 30%;
+    max-width: 200px;
+    height: 6vh;
+    background-color: #003049;
+    color: #ffffff;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #669BBC;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .box {
+        height: 25vw;
+        width: 25vw;
+        font-size: clamp(2.5rem, 8vw, 4rem); /* Adjusts for smaller screens */
+    }
+    .reset {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        height: 30vw;
+        width: 30vw;
+        font-size: clamp(2rem, 6vw, 3rem); /* Adjusts for mobile screens */
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .reset {
+        width: 50%;
+    }
+}
