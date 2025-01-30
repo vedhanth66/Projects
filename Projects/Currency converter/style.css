@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(255, 235, 210);
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    background-color: aliceblue;
+    border-radius: 2rem;
+}
+
+.input{
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#container{
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#Heading{
+    font-size: 3rem;
+    text-align: center;
+    color:  brown;
+}
+
+#amt{
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.dropDown{
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.btn_div{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.choose_from , .choose_to{
+    padding: 0.2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#btn{
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.result{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    color: rgb(180, 17, 17);
+}
+
+@media(max-width: 945px){
+    #Heading{
+        font-size: 2rem;
+    }
+    .input{
+        font-size: 1rem;
+    }
+    #amt{
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    .dropDown{
+        font-size: 1.5rem;
+        gap: 4rem;
+        margin-top: 2rem;
+    }
+    .choose_from , .choose_to{
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    #btn{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .result{
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+    }
+    #container{
+        padding: 1.5rem;
+    }
+}
+
+@media(max-width: 670px){
+    #Heading{
+        font-size: 1.5rem;
+    }
+    .input{
+        font-size: 1rem;
+    }
+    #amt{
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+    .dropDown{
+        font-size: 1rem;
+        gap: 4rem;
+        margin-top: 2rem;
+    }
+    .choose_from , .choose_to{
+        padding: 0.2rem;
+        font-size: 1rem;
+    }
+    #btn{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .result{
+        font-size: 1.5rem;
+        margin-top: 1.2rem;
+    }
+    #container{
+        padding: 1rem;
+    }
+}
