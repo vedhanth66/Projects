@@ -18,37 +18,38 @@ form{
 }
 
 .input{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-radius: 1rem;
     text-align: center;
 }
 
 #container{
-    padding: 3rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
     align-items: center;
     justify-content: center;
 }
 
 #Heading{
-    font-size: 3rem;
+    text-decoration: underline;
+    font-size: 2.5rem;
     text-align: center;
     color:  brown;
 }
 
 #amt{
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem;
     text-align: center;
 }
 
 .dropDown{
-    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold   ;
+    font-size: 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
@@ -58,10 +59,16 @@ form{
 }
 
 .choose_from , .choose_to{
+    font-weight: bold;
     padding: 0.2rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 1rem;
     cursor: pointer;
+}
+
+#btn:hover{
+    background-color: rgb(94, 94, 192);
+    color: white;
 }
 
 #btn{
@@ -79,6 +86,13 @@ form{
     color: rgb(180, 17, 17);
 }
 
+.price{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: rgb(180, 17, 17);
+}
+
 @media(max-width: 945px){
     #Heading{
         font-size: 2rem;
@@ -87,17 +101,11 @@ form{
         font-size: 1rem;
     }
     #amt{
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
     }
     .dropDown{
-        font-size: 1.5rem;
-        gap: 4rem;
-        margin-top: 2rem;
-    }
-    .choose_from , .choose_to{
-        padding: 0.2rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     #btn{
         padding: 0.5rem;
@@ -106,9 +114,6 @@ form{
     .result{
         font-size: 1.5rem;
         margin-top: 1.2rem;
-    }
-    #container{
-        padding: 1.5rem;
     }
 }
 
@@ -121,15 +126,9 @@ form{
     }
     #amt{
         font-size: 1rem;
-        margin-top: 1.5rem;
+        margin-top: 1.2rem;
     }
     .dropDown{
-        font-size: 1rem;
-        gap: 4rem;
-        margin-top: 2rem;
-    }
-    .choose_from , .choose_to{
-        padding: 0.2rem;
         font-size: 1rem;
     }
     #btn{
@@ -140,7 +139,35 @@ form{
         font-size: 1.5rem;
         margin-top: 1.2rem;
     }
-    #container{
-        padding: 1rem;
+}
+
+@media(max-width: 400px){
+    #Heading{
+        font-size: 1.2rem;
+    }
+    .input{
+        font-size: 0.8rem;
+    }
+    #amt{
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+    }
+    .dropDown{
+        font-size: 0.8rem;
+    }
+    #btn{
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+    .result{
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+    }
+    .choose_from , .choose_to{
+        font-weight: bold;
+        padding: 0.2rem;
+        font-size: 0.7rem;
+        border-radius: 1rem;
+        cursor: pointer;
     }
 }
