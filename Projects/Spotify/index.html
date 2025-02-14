@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="Spotify.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<body>
+    <div class="container flex">
+        <div class="left bg-black">
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="upper">
+                    <div class="logo">
+                        <i class="fa-brands fa-spotify logo-icon"></i><p>Spotify</p>
+                    </div>
+                    <div class="close">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                </div>
+                <ul>
+                    <li class="hover-size"><i class="fa-solid fa-house"></i>Home</li>
+                    <li class="hover-size"><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="library-head hover-size">
+                    <i class="fa-solid fa-book"></i>
+                    <p>Your library</p>
+                </div>
+                <div class="song-list">
+                    <ul></ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded p-1">
+            <div class="header rounded">
+                <div class="arrows">
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <p><i class="fa-solid fa-less-than hover-bold"></i></p>
+                    <p><i class="fa-solid fa-greater-than hover-bold"></i></p>
+                </div>
+                <div class="buttons">
+                    <button class="signup rounded hover-bold hover-underline">Sign Up</button>
+                    <button class="login rounded hover-bold hover-underline">Login</button>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h1>Spotify playlist</h1>
+                <div class="card-container"></div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="playbar-components">
+                        <div class="song-info"></div>
+                        <div class="playbar-icons">
+                            <p class="hover-size2 previous"><i class="fa-solid fa-backward-step"></i></p>
+                            <p class="hover-size2 play"><i class="fa-solid fa-play"></i></p>
+                            <p class="hover-size2 next"><i class="fa-solid fa-forward-step"></i></p>
+                        </div>
+                        <div class="vol-time">
+                            <div class="song-time"></div>
+                            <div class="volume">
+                                <div class="icon">
+                                    <i class="fa-solid fa-volume-low"></i>
+                                </div>
+                                <div class="range">
+                                    <input type="range" name="vol" class="volume-slider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
