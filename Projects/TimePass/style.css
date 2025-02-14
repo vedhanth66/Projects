@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.head {
+    height: 30vh;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    height: 15vh;
+    width: 100%;
+}
+
+.Yes, .No {
+    font-size: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.No {
+    position: absolute;
+}
