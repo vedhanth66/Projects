@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/chessGame.css">
+</head>
+<body>
+    <div class="container">
+        <div class="players-info">
+            <div>White: <span id="white-player">Waiting...</span></div>
+            <div>Black: <span id="black-player">Waiting...</span></div>
+        </div>
+        <div class="connect">You are <span id="player-name">Loading...</span></div>
+        <div class="result">Game in progress...</div>
+        <div class="chessboard"></div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js" crossorigin="anonymous"></script>
+    <script src="/js/chessGame.js"></script>
+</body>
+</html>

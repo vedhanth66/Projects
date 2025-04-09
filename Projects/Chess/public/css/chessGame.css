@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 540px;
+    padding: 1rem;
+  }
+  
+  .players-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #ffdaa3;
+    font-size: 1.1rem;
+  }
+  
+  .connect {
+    font-size: 1.2rem;
+    color: #f1c40f;
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  .result {
+    font-size: 2rem;
+    color: #ff6b6b;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: solid #84240c 0.7rem;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+  }
+  
+  .square.light {
+    background-color: #f0d9b5;
+  }
+  
+  .square.dark {
+    background-color: #b58863;
+  }
+  
+  .piece {
+    font-size: clamp(32px, 9vw, 56px);
+    line-height: 1;
+    vertical-align: middle;
+    user-select: none;
+    pointer-events: auto;
+    cursor: grab;
+    font-family: "Segoe UI Symbol", "Arial Unicode MS", sans-serif;
+    transform: scale(0.92); 
+  }
+  
+  .piece.white {
+    color: white;
+    filter: drop-shadow(0 0 3px #000000);
+  }
+  
+  .piece.black {
+    color: black;
+    filter: drop-shadow(0 0 1px #f5deb3);
+    transform: scale(0.86); 
+  }
+  
+  .flipped {
+    transform: rotate(180deg);
+  }
+  
+  .flipped .piece {
+    transform: rotate(180deg) scale(0.86);
+  }
+  
+
+  @media (max-width: 600px) {
+    .container {
+      max-width: 95vw;
+      padding: 0.5rem;
+    }
+  
+    .connect {
+      font-size: 1rem;
+    }
+  
+    .result {
+      font-size: 1.5rem;
+    }
+  
+    .players-info {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1rem;
+    }
+  
+    .piece {
+      font-size: clamp(28px, 10vw, 54px);
+    }
+  }
+  
